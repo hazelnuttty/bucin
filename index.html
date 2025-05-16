@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lirik Tengah Gantian</title>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .lyrics {
+      position: relative;
+      width: 100vw;
+      height: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .line {
+      position: absolute;
+      opacity: 0;
+      font-size: 1.7rem;
+      text-align: center;
+      animation: fadeInOut 2s ease-in-out forwards;
+    }
+
+    .line:nth-child(1) { animation-delay: 0s; }
+    .line:nth-child(2) { animation-delay: 2s; }
+    .line:nth-child(3) { animation-delay: 4s; }
+    .line:nth-child(4) { animation-delay: 6s; }
+    .line:nth-child(5) { animation-delay: 8s; }
+    .line:nth-child(6) { animation-delay: 10s; }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop hidden>
+    <source src="media/lagu.mp3" type="audio/mpeg">
+    your browser does not support the audio tag.
+  </audio>
+
+  <div class="lyrics">
+    <div class="line">youu can ask the flower's ☁️🌷💐</div>
+    <div class="line">i sit for hoOuur 🧘🏻‍♀️🕓</div>
+    <div class="line">telling all the bluee birds 🐦✨</div>
+    <div class="line">the bill and coo birds 🕊️💁🏻‍♀️ pretty little baby 💁🏻‍♀️🍼🍭</div>
+    <div class="line">i'm so in loOovee with yoOouu 🫵🏻🫵🏻🤍</div>
+    <div class="line">REHAN</div>
+  </div>
+</body>
+</html>
